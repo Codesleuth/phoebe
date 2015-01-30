@@ -1,0 +1,25 @@
+{
+  "name": "phoebe",
+  "version": "0.0.1",
+  "description": "A HTTP middleware with unpredictable behaviour.",
+  "author": "David Wood <david.p.wood@gmail.com> (http://www.codesleuth.co.uk/)",
+  "main": "index.js",
+  "bin": "./bin/server.js",
+  "scripts": {
+    "start": "node ./bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codesleuth/phoebe.git"
+  },
+  "keywords": [
+    "test",
+    "http",
+    "random",
+    "response"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/codesleuth/phoebe/raw/master/LICENSE"
+  }
+}

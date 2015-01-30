@@ -1,10 +1,12 @@
 {
   "name": "phoebe",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A HTTP middleware with unpredictable behaviour.",
   "author": "David Wood <david.p.wood@gmail.com> (http://www.codesleuth.co.uk/)",
   "main": "index.js",
-  "bin": "./bin/server.js",
+  "bin": {
+    "phoebe": "./bin/phoebe.js"
+  },
   "scripts": {
     "start": "node ./bin/server.js"
   },

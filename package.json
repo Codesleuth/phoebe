@@ -8,7 +8,7 @@
     "phoebe": "./bin/phoebe.js"
   },
   "scripts": {
-    "start": "node ./bin/server.js"
+    "start": "node ./bin/phoebe.js"
   },
   "repository": {
     "type": "git",

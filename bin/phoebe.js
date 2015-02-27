@@ -1,13 +1,17 @@
 #!/usr/bin/env node
 
 var http = require('http'),
+    log = require('../lib/logger'),
+    logger = log.middleware(),
     Phoebe = require('../');
 
 var phoebe = Phoebe();
 
 var httpServer = http.createServer(function (req, res) {
-  phoebe(req, res, function () {
-    res.end();
+  logger(req, res, function () {
+    phoebe(req, res, function () {
+      res.end();
+    });
   });
 });
 

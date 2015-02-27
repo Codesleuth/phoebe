@@ -2,7 +2,7 @@ var random = require('./lib/random');
 
 var statusCodes = [200, 201, 400, 403, 500];
 
-function decideResponse(req) {
+function decideResponse() {
   var neverResponds = random.boolean();
   if (neverResponds)
     return null;
@@ -22,7 +22,7 @@ function Respond(strategy, res) {
 
 module.exports = function () {
   return function server(req, res, next) {
-    var decidedResponse = decideResponse(req);
+    var decidedResponse = decideResponse();
     if (decidedResponse === null)
       return next();
 

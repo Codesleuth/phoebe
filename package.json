@@ -1,6 +1,6 @@
 {
   "name": "phoebe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A HTTP middleware with unpredictable behaviour.",
   "author": "David Wood <david.p.wood@gmail.com> (http://www.codesleuth.co.uk/)",
   "main": "index.js",
